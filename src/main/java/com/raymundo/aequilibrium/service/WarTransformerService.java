@@ -104,10 +104,7 @@ public class WarTransformerService {
 //	    	  logger.info("figther 1 :"+Constant.WINNER_AUTOBOT+" appeared ");
 	    	  listOfLosers.clear();
 	    	  listOfWinners.clear();
-	    	     for( Transformer transformersDestroyed : listTransformersReadyToFight) {
-	    	      listOfLosers.add(transformersDestroyed);    	      
-	    	     }
-	    	     message=Constant.PREDAKING_VS_OPTIMUS.replace(Constant.REPLACE1,  Integer.toString(listOfLosers.size()));
+	    	     message=Constant.PREDAKING_VS_OPTIMUS;
 	    	     messageBean.setMessage(message);
 	    	     break;
 	      }else if(listTransformersReadyToFight.get(i).getName().equals(Constant.WINNER_AUTOBOT)) {
