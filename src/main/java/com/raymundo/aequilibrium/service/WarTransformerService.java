@@ -80,6 +80,7 @@ public class WarTransformerService {
 //   			+" rank : "+data.getRank()+" skill : "+data.getSkill()+" speed : "+data.getSpeed()+" strength : "+data.getStrength());
 //        }
      
+      Integer totalBattles = listTransformersReadyToFight.size()/2;
       Integer courageDifference = 0;
       Integer strengthDifference = 0;
       Integer skillDifference = 0;
@@ -226,7 +227,7 @@ public class WarTransformerService {
     	  if(survivorsLosingTeam.length()==0) {
     		  survivorsLosingTeam.append(Constant.NO_SURVIVORS);
     	  }
-    	     message = message.replace(Constant.REPLACE1, Integer.toString(listOfWinners.size())).
+    	     message = message.replace(Constant.REPLACE1, Integer.toString(totalBattles)).
     	    		 replace(Constant.REPLACE2, winningTeam).
     	    		 replace(Constant.REPLACE3, teamMembers).
     	    		 replace(Constant.REPLACE4, losingTeam).
