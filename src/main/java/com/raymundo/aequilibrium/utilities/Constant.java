@@ -23,7 +23,7 @@ public class Constant {
 	public static final Integer SKILL_TO_WIN = 3;
 	public static final String WINNER_DECEPTICON = "Predaking";
 	public static final String WINNER_AUTOBOT = "Optimus Prime";
-	public static final String PREDAKING_VS_OPTIMUS = "Game Over, (1) competitors were destroyed";
+	public static final String PREDAKING_VS_OPTIMUS = "Game Over, All competitors were destroyed";
 	public static final String REPLACE1 = "(1)";
 	public static final String REPLACE2 = "(2)";
 	public static final String REPLACE3 = "(3)";
