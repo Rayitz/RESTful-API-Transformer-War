@@ -22,8 +22,11 @@ In less than a minute the API is ready to be used
 How to build and run the unit tests
 
 I builded manually the unit test using restTemplate, the path of unit test is src/test/java
+
 JSONS and parameters required are in methods of TransformerswarApplicationTests Class, you can change it in order to test the API!
+
 To run it, Right click on the test that you want to run and choose Run As --> Junit Test
+
 I set a log in each method to see the answer of each RESTful service
 
 
