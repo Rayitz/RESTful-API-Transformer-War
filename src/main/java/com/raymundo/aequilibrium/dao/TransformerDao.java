@@ -28,24 +28,24 @@ public class TransformerDao implements TransformerRepository {
 	protected final Log logger = LogFactory.getLog(getClass());
 
 
-	@SuppressWarnings("unchecked")
-	@Override
-	public Transformer getTransformerByName(String name){
-	 try {
-			String query = "FROM Transformer t WHERE t.name =:name";
-
-		Query q = entityManager.createQuery(query);
-		q.setParameter("name", name);
-		
-		return (Transformer) q.getSingleResult();
-		
-	 }  catch (NoResultException ex) {
-			return null;
-	 }catch (RuntimeException ex) {
-			logger.error(ex.getMessage());			
-			return null;
-	 }
-	}
+//	@SuppressWarnings("unchecked")
+//	@Override
+//	public Transformer getTransformerByName(String name){
+//	 try {
+//			String query = "FROM Transformer t WHERE t.name =:name";
+//
+//		Query q = entityManager.createQuery(query);
+//		q.setParameter("name", name);
+//		
+//		return (Transformer) q.getSingleResult();
+//		
+//	 }  catch (NoResultException ex) {
+//			return null;
+//	 }catch (RuntimeException ex) {
+//			logger.error(ex.getMessage());			
+//			return null;
+//	 }
+//	}
 
 
 	@Override
