@@ -41,16 +41,16 @@ public class TransformerService {
 	public String saveUpdateTransformer(Transformer transformer) {
 		MessageBean messageBean = new MessageBean();
 		String message = null;
-		Transformer serchTransformer = null;
+//		Transformer serchTransformer = null;
         int skill = 0;
 		try {
-			serchTransformer = rTransformer.getTransformerByName(transformer.getName());
+//			serchTransformer = rTransformer.getTransformerByName(transformer.getName());
 //			logger.info("Lo que se pretende almacenar name" + transformer.getName()+" tipo : "+transformer.getType()+" firepower : "+transformer.getFirepower()+
 //					" courage : "+transformer.getCourage()+" endurance : "+transformer.getEndurance()+" inteligence : "+transformer.getIntelligence()
 //					+" rank : "+transformer.getRank()+" skill : "+transformer.getSkill()+" speed : "+transformer.getSpeed()+" strength : "+transformer.getStrength());
-			if (serchTransformer!=null) {
+			if (transformer.getId()!=null && transformer.getId()>0) {
 				messageBean.setMessage(Constant.UPDATE_TRANSFORMER_OK);
-				transformer.setId(serchTransformer.getId());
+//				transformer.setId(serchTransformer.getId());
 			} else {
 				messageBean.setMessage(Constant.INSERT_TRANSFORMER_OK);
 			}
@@ -63,7 +63,7 @@ public class TransformerService {
 		} catch (RuntimeException ex) {
 
 			logger.error(ex.getMessage());
-			if (serchTransformer!=null) {
+			if (transformer.getId()!=null && transformer.getId()>0) {
 				messageBean.setMessage(Constant.UPDATE_TRANSFORMER_FAIL);
 			} else {
 				messageBean.setMessage(Constant.INSERT_TRANSFORMER_FAIL);

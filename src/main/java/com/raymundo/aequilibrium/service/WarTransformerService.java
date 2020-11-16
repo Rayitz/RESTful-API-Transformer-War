@@ -100,7 +100,9 @@ public class WarTransformerService {
 //		  logger.info("courageDifference : "+courageDifference+" strengthDifference : "+ strengthDifference+" skillDifference : "+skillDifference);
 
 		  if((listTransformersReadyToFight.get(i).getName().equals(Constant.WINNER_AUTOBOT) && listTransformersReadyToFight.get(i+1).getName().equals(Constant.WINNER_DECEPTICON)) 
-				  ||(listTransformersReadyToFight.get(i+1).getName().equals(Constant.WINNER_AUTOBOT) && listTransformersReadyToFight.get(i).getName().equals(Constant.WINNER_DECEPTICON)) ) {
+				  ||(listTransformersReadyToFight.get(i+1).getName().equals(Constant.WINNER_AUTOBOT) && listTransformersReadyToFight.get(i).getName().equals(Constant.WINNER_DECEPTICON)) 
+				  ||(listTransformersReadyToFight.get(i).getName().equals(Constant.WINNER_AUTOBOT) && listTransformersReadyToFight.get(i+1).getName().equals(Constant.WINNER_AUTOBOT))
+				  ||(listTransformersReadyToFight.get(i+1).getName().equals(Constant.WINNER_DECEPTICON) && listTransformersReadyToFight.get(i).getName().equals(Constant.WINNER_DECEPTICON))) {
 //	    	  logger.info("figther 1 :"+Constant.WINNER_AUTOBOT+" appeared ");
 	    	  listOfLosers.clear();
 	    	  listOfWinners.clear();
