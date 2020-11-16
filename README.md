@@ -1,25 +1,29 @@
 # RESTful-API-Transformer-War
 CRUD Transformer and the transformers team that wins the war
 
-How to build the Project and start the Project
+# How to build the Project and start the Project
 
 
 Download Spring Tools 4 in eclipse IDE
 
 
 Create a new project and select Spring Starter Project and press next
+
 Set Window Information and press next
+
 Select dependencies and press next
+
 Press Finish to create the project
 
 
-How to start the Project
+# How to start the Project
 
 Right click on your project and choose Run As --> Spring Boot App
+
 In less than a minute the API is ready to be used
 
 
-How to build and run the unit tests
+# How to build and run the unit tests
 
 I builded manually the unit test using restTemplate, the path of unit test is src/test/java
 
@@ -30,15 +34,15 @@ To run it, Right click on the test that you want to run and choose Run As --> Ju
 I set a log in each method to see the answer of each RESTful service
 
 
-API endpoints
+# API endpoints
 
 
-List Transformers
+# List Transformers
 
 http://localhost:8080/transformer/list
 
 
-Create a Transformer
+# Create a Transformer
 
 http://localhost:8080/transformer/create
 
@@ -58,7 +62,7 @@ JSON data
     "skill": 2
  }
 
-Update a Transformer
+# Update a Transformer
 
 http://localhost:8080/transformer/update
 
@@ -80,14 +84,14 @@ JSON data
  }
 
 
-Delete a Transformer
+# Delete a Transformer
  
 Set {idTransformer} as Integer value
 
 http://localhost:8080/transformer/delete/{idTransformer}
 
 
-Given a list of Transformer IDs, determine the winning team	
+# Given a list of Transformer IDs, determine the winning team	
 
 http://localhost:8080/war
 
@@ -98,22 +102,8 @@ Json data
 }
 
 
-Assumptions or notes to the reviewer
+# Assumptions or notes to the reviewer
 
-Remember first of all that you have to install maven and fill the settings.xml with a basic configuration like:
-
-<proxies>
-    <proxy>
-      <id>...</id>
-      <active>true</active>
-      <protocol>http</protocol>
-      <username>....</username>
-      <password>....</password>
-      <host>....</host>
-      <port>....</port>
-      <nonProxyHosts>local.net|some.host.com</nonProxyHosts>
-    </proxy>
-   </proxies>
+Remember first of all that you have to install maven and fill the settings.xml with a basic configuration
    
-   
-   Enjoy the Transformers War!
+# Enjoy the Transformers War!
