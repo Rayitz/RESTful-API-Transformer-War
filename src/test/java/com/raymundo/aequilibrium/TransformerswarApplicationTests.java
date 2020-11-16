@@ -73,6 +73,7 @@ class TransformerswarApplicationTests {
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		
 		String requestJson = "{" + 
+				"    \"id\":           1," +
 				"    \"name\":         \"Optimus Prime\"," + 
 				"    \"type\":         \"A\"," + 
 				"    \"strength\":     10," + 
